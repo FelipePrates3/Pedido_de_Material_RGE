@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário</title>
+</head>
+<title>Solicitação de Material</title>
+  <style>
+    body {
+      background-image: url("https://www.rbsdirect.com.br/imagesrc/24277390.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Adicione estilos ao seu formulário aqui */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0062cc;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px; /* Define o tamanho da fonte */
+      color: #333; /* Define a cor da fonte */
+      margin-top: 20px; /* Define a margem superior */
+    }
+    
+    label {
+      display: block;
+      font-weight: bold; /* Define o peso da fonte */
+      font-size: 18px; /* Define o tamanho da fonte */
+      color: #000000; /* Define a cor da fonte */
+      margin-top: 10px; /* Define a margem superior */
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px; /* Define o tamanho da fonte */
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 5px; /* Define a margem superior */
+    }
+    
+    button[type="submit"] {
+      background-color: #4CAF50; /* Define a cor de fundo do botão */
+      color: white; /* Define a cor do texto do botão */
+      font-size: 16px; /* Define o tamanho da fonte do botão */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px; /* Define a margem superior */
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #3e8e41; /* Define a cor de fundo do botão ao passar o mouse */
+    }
+    select#nome-material {
+      width: 420px; /* Define a largura desejada */
+    }
+    .custom-select {
+    display: inline-block;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .custom-select select {
+    width: 150px;
+    padding: 8px 40px 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .custom-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    pointer-events: none;
+  }
+  .select-equipe {
+    position: relative;
+    display: inline-block;
+  }
+
+  .select-equipe select {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .select-equipe::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+  }
+  </style>
+<body>
+<img src="https://www.rge-rs.com.br/sites/rge-rs/files/2022-01/RGE%20colorido_no_extra_space.png" alt="Logo da empresa" style="position: absolute; top: 10px; left: 10px; width: 100px;">
+  <form>
+    <label for="nome-completo">Nome completo:</label>
+  <input type="text" id="nome-completo" placeholder="Digite seu nome completo">
+  <br>
+
+  <div class="select-equipe">
+    <select id="equipe">
+<option value="equipe3">CAX0225</option>
+<option value="equipe3">CAX0232</option>
+<option value="equipe3">CAX0363</option>
+<option value="equipe3">CAX0376</option>
+<option value="equipe3">CAX0377</option>
+<option value="equipe3">CAX0478</option>
+<option value="equipe3">CAX0479</option>
+<option value="equipe3">CAX0480</option>
+<option value="equipe3">CAX481</option>
+<option value="equipe3">CAX0502</option>
+<option value="equipe3">CAX0504</option>
+<option value="equipe3">CAX1148</option>
+<option value="equipe3">CAX1325</option>
+<option value="equipe3">CAX1203</option>
+<option value="equipe3">CAX1724</option>
+<option value="equipe3">CAX1909</option>
+<option value="equipe3">CAX1967</option>
+<option value="equipe3">CAX503</option>
+<option value="equipe3">CAX860</option>
+<option value="equipe3">CAX3381</option>
+<option value="equipe3">CAX3384</option>
+
+    </select>
+   
+  </div>
+
+  <label for="identificacao">Identificação URE:</label>
+  <input type="number" id="identificacao" placeholder="Digite seu URE" required>
+  <br>
+
+    <label for="nome-material">Nome dos materiais:</label>
+  <input type="search" id="nome-material" list="materiais"style="width: 520px;" placeholder="Digite para pesquisar">
+  <br>
+  
+  <label for="quantidade">Quantidade:</label>
+  <input type="number" id="quantidade" placeholder="Digite a quantidade">
+  <div class="custom-select">
+    <select id="unidade-medida">
+      <option value="metros">metros</option>
+      <option value="unidades">unidades</option>
+    </select>
+  </div>
+  <br>
+  
+  <label for="observacao">Observação:</label>
+  <textarea id="observacao" placeholder="Digite uma observação"></textarea>
+  <br>
+  
+  <datalist id="materiais">
+    <option value="Moto-serra"></option>
+    <option value="Corrente de corte"></option>
+    <option value="Óleo de lubrificação"></option>
+    <option value="Combustível"></option>
+    <option value="Capacete"></option>
+    <option value="Óculos"></option>
+    <option value="Protetor auricular"></option>
+    <option value="Luvas"></option>
+    <option value="Roupas"></option>
+    <option value="Botas"></option>
+    <option value="Cesto aéreo"></option>
+    <option value="Controle remoto"></option>
+    <option value="Cintos"></option>
+    <option value="Cordas e cabos"></option>
+    <option value="Cinto de segurança"></option>
+    <option value="Talabarte"></option>
+    <option value="Mosquetões"></option>
+    <option value="Luvas"></option>
+    <option value="Botas"></option>
+    <option value="EPIs"></option>
+    <option value="Luvas isolantes"></option>
+    <option value="Mangas isolantes"></option>
+    <option value="Calçado isolante"></option>
+    <option value="Traje de arco elétrico"></option>
+    <option value="Óculos de proteção para arco elétrico"></option>
+
+  <option value="">Selecione um material</option>
+  <option value="Fio de cobre">Fio de cobre</option>
+  <option value="Disjuntor">Disjuntor</option>
+  <option value="Tomada">Tomada</option>
+  <option value="Interruptor">Interruptor</option>
+  <option value="Lâmpada">Lâmpada</option>
+  <option value="Conector">Conector</option>
+  <option value="Caixa de distribuição">Caixa de distribuição</option>
+  <option value="Cabo elétrico">Cabo elétrico</option>
+  <option value="Bucha de fixação">Bucha de fixação</option>
+  <option value="Fita isolante">Fita isolante</option>
+  <option value="Alicate de corte">Alicate de corte</option>
+  <option value="Chave de fenda">Chave de fenda</option>
+  <option value="Chave Phillips">Chave Phillips</option>
+  <option value="Multímetro">Multímetro</option>
+  <option value="Testador de voltagem">Testador de voltagem</option>
+  <option value="Conduíte">Conduíte</option>
+  <option value="Tubo PVC">Tubo PVC</option>
+  <option value="Caixa de passagem">Caixa de passagem</option>
+  <option value="Emenda de cabos">Emenda de cabos</option>
+  <option value="Termocontrátil">Termocontrátil</option>
+  </datalist>
+  
+  <button type="submit">Enviar</button>
+
+  <script>
+    document.getElementById("botao-enviar").addEventListener("click", function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do botão de enviar
+    exibirMensagemSucesso();
+  });
+
+  function exibirMensagemSucesso() {
+    var mensagem = document.createElement("p");
+    mensagem.textContent = "Pedido feito com sucesso";
+    document.body.appendChild(mensagem);
+ 
+  </script>
+    <h1></h1>
+</body>
+</html>
