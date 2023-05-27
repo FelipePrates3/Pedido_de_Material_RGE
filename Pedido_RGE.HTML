@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <footer class="developer">
+    Desenvolvido por <a href="https://felipeprates.dev" target="_blank">Felipe Prates</a>
+  </footer>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Material</title>
+    <style>
+
+html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+                      background-image: url("https://wallpaperaccess.com/full/2114801.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+               /* Classe para caixas de texto que não serão afetadas pela altura */
+               .no-height {
+            height: auto !important;
+        }
+
+        form {
+          flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0062cc;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 50%;
+            padding: 9px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ffffff;
+            margin-top: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        select#nome-material {
+            width: 520px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .custom-select select {
+            width: 150px;
+            padding: 8px 40px 8px 10px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            background-color: #fcfcfc;
+            color: #333;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+       
+        .success-message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 24px;
+        text-align: center;
+        display: none;
+        z-index: 9999;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .success-message:before {
+        content: "\2713"; /* Símbolo de marca de seleção */
+        font-size: 48px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .success-message p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .success-message button {
+        background-color: #ffffff;
+        color: #007bff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        margin-top: 20px;
+    }
+
+    .success-message button:hover {
+        background-color: #e6e6e6;
+    }
+
+          .developer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<img src="https://www.rge-rs.com.br/sites/rge-rs/files/2022-01/RGE%20colorido_no_extra_space.png" alt="Logo da empresa" style="position: absolute; top: 10px; left: 10px; width: 100px;">
+
+
+<form>
+    <label for="nome-completo">Nome completo:</label>
+    <input type="text" id="nome-completo" placeholder="Digite seu nome completo">
+
+    <label for="identificacao">Identificação URE:</label>
+<input type="text" id="identificacao" placeholder="Digite seu URE" maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required style="width: 150px;">
+
+     
+    
+    <div class="select-equipe">
+        <label for="equipe">Equipe:</label>
+        <div class="custom-select">
+            <select id="equipe">
+                <option value="equipe3">CAX0225</option>
+                <option value="equipe3">CAX0232</option>
+                <option value="equipe3">CAX0363</option>
+                <option value="equipe3">CAX0376</option>
+                <option value="equipe3">CAX0377</option>
+                <option value="equipe3">CAX0478</option>
+                <option value="equipe3">CAX0479</option>
+                <option value="equipe3">CAX0480</option>
+                <option value="equipe3">CAX481</option>
+                <option value="equipe3">CAX0502</option>
+                <option value="equipe3">CAX0504</option>
+                <option value="equipe3">CAX1148</option>
+                <option value="equipe3">CAX1325</option>
+                <option value="equipe3">CAX1203</option>
+                <option value="equipe3">CAX1724</option>
+                <option value="equipe3">CAX1909</option>
+                <option value="equipe3">CAX1967</option>
+                <option value="equipe3">CAX503</option>
+                <option value="equipe3">CAX860</option>
+                <option value="equipe3">CAX3381</option>
+                <option value="equipe3">CAX3384</option>
+            </select>
+        </div>
+    </div>
+
+    <label for="nome-material">Nome do material:</label>
+<input type="text" id="nome-material" placeholder="Digite o nome do material" list="materiais">
+
+
+
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" placeholder="Quantidade" style="width: 150px;">
+
+    <div class="custom-select">
+        <select id="unidade-medida">
+            <option value="metros">metros</option>
+            <option value="unidades">unidades</option>
+        </select>
+    </div>
+    <br>
+
+    <label for="justificativa">Justificativa:</label>
+    <textarea id="justificativa" placeholder="Digite sua justificativa"></textarea>
+
+    <input type="submit" value="Enviar">
+
+    <div class="success-message" id="successMessage">
+        Pedido feito com sucesso!
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede o envio do formulário
+
+                var inputURE = document.getElementById('identificacao');
+                var ure = inputURE.value.toUpperCase(); // Obter o valor da URE digitada e converter para letras maiúsculas
+
+                // Verifica se a URE é igual a "2012494"
+                if (ure !== '2012494') {
+                    alert('Desculpe, URE Nao cadastrado.');
+                    return; // Impede o envio do formulário
+                }
+
+                // Exibe a mensagem de sucesso
+                var successMessage = document.getElementById('successMessage');
+                successMessage.style.display = 'block';
+
+                // Limpa os campos do formulário
+                document.querySelector('form').reset();
+
+                // Esconde a mensagem após 3 segundos
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 3000);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio do formulário
+
+    // Obter os valores dos inputs
+    var nomeCompleto = document.getElementById('nome-completo').value;
+    var identificacaoURE = document.getElementById('identificacao').value;
+    var equipe = document.getElementById('equipe').value;
+    var nomeMaterial = document.getElementById('nome-material').value;
+    var quantidade = document.getElementById('quantidade').value;
+    var unidadeMedida = document.getElementById('unidade-medida').value;
+    var justificativa = document.getElementById('justificativa').value;
+
+    var formData = {
+      nome: nomeCompleto,
+      ure: identificacaoURE,
+      equipe: equipe,
+      material: nomeMaterial,
+      quantidade: quantidade,
+      unidade: unidadeMedida,
+      justificativa: justificativa
+    };
+
+     console.log(formData)
+
+       // Enviar os dados para o backend
+       axios.post('http://127.0.0.1:5000/registros', formData)
+       .then(function(response) {
+        // Requisição bem-sucedida
+        console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+        alert('Dados enviados com sucesso!');
+        // Faça algo após o envio dos dados...
+      }).catch(function(error) { 
+        // Requisição falhou
+        alert('Erro ao enviar os dados:', error);
+      });
+  });
+});
+
+    </script>
+
+</form>
+</body>
+</html>
